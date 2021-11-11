@@ -1,0 +1,58 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #3d3d3d;
+    /* background: -webkit-linear-gradient(to right, #ff9472, #f2709c); */
+    /* background: linear-gradient(to right, #acacac, #4e0a0a); */
+}
+
+input {
+    width: 40%;
+    height: 40%;
+}
+
+.float-container {
+    border: 3px;
+    padding: 10px;
+    fill:rgba(0, 0, 0, .75);
+    overflow: hidden;
+}
+
+.float-child {
+    width: 33.33%;
+    float: left;
+    padding: 10px;
+}
+
+@media screen and (max-width: 820px) {  
+    .float-child {
+        width: 100%;
+        float: none;
+        display: block;
+        margin: auto;
+    }
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.buttondiv{
+    width: 100%;
+    padding: 20px;
+}
+
+.analyzeButton {
+    width: 100%;
+    padding: 15px;
+}
